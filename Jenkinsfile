@@ -15,7 +15,7 @@ pipeline {
         
         stage ('Deploy') {
             steps {
-                cp sample.war /usr/local/tomcat9/webapps
+                sh 'cp "sample.war /usr/local/tomcat9/webapps"'
             }
         }
     }
